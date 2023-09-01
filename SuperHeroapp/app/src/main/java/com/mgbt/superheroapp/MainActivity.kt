@@ -80,7 +80,7 @@ class MainActivity : AppCompatActivity() {
             .build()
     }
 
-    fun navigateToDetail(idSuperhero: String) {
+    private fun navigateToDetail(idSuperhero: String) {
         val intent = Intent(this, DetailSuperheroActivity::class.java)
         intent.putExtra(EXTRA_ID, idSuperhero)
         startActivity(intent)
